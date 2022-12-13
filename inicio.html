@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Jogo mata mosquito</title>
+
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="./style_fim.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+        <script>
+            function iniciarJogo(){
+                var nivel = document.getElementById('nivel').value
+                
+                if(nivel === ''){
+                    alert('Selecione um nivel para jogar')
+                    return false
+                }
+
+                window.location.href = "index.html?" + nivel
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="fim">
+                <div class="gameover">
+                    <img class ='img' src="./imagens/game.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="select">
+            <select id="nivel">
+                <option value="">Selecione</option>
+                <option value="frango">Frango</option>
+                <option value="normal">Normal</option>
+                <option value="sigma">Sigma</option>
+            </select>
+        </div>
+
+        <div class="button">
+            <div class="but">
+                <button type="button" class="botao" onclick="iniciarJogo()">Iniciar Jogo</button>
+            </div>
+        </div>
+    </body>
+</html>

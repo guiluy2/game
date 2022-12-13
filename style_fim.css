@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.fim{
+    display: flex;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-size: 20px;
+    padding: 5px;
+    width: 125px;
+    border-radius: 5px;
+    border-color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    .img{
+        padding-top: 100px;
+        display: flex;
+        width: 350px;
+    }
+}
